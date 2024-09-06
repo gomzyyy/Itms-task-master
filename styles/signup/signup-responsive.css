@@ -1,0 +1,148 @@
+@media (max-width: 1200px) {
+  .signup-page {
+    flex-direction: column-reverse;
+    overflow: auto;
+    justify-content: unset;
+  }
+
+  .impression-image {
+    width: 100.5vw;
+    height: 40%;
+    top: -227px;
+    min-height: 290px;
+    margin: 0;
+    overflow: visible;
+  }
+  .image-ellipse {
+    transform: scale(0.7);
+    top: -45px;
+    left: unset;
+  }
+
+  .signup-container {
+    left: 40px;
+    transform: scale(1);
+    margin-top: 0;
+  }
+
+  .signup-side {
+    width: 100vw;
+    max-height: 820px;
+    overflow: visible;
+    top: -100px;
+  }
+
+  .image-ellipse-signup {
+    left: unset;
+  }
+  .side-image-decoration {
+    left: -20px;
+    top: 0;
+  }
+  .side-image-decoration img {
+    transform: rotatey(180deg);
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    width: fit-content;
+    height: fit-content;
+  }
+  .signup-page {
+    height: fit-content;
+    width: 100vw;
+    overflow: auto;
+  }
+
+  .impression-image {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    overflow: hidden;
+    top: -120px;
+    max-height: 290px;
+    width: 100vw;
+  }
+  .image-ellipse {
+    top: -42px;
+    transform: scale(0.3);
+  }
+  .signup-side {
+    height: 576px;
+    margin-top: 0;
+    align-items: unset;
+    width: 100vw;
+    top: -110px;
+    overflow-y: visible;
+  }
+  .signup-container {
+    left: unset;
+    transform: scale(0.9);
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    overflow: visible;
+  }
+  .side-image-decoration {
+    left: -50px;
+  }
+}
+@media (max-width: 580px) {
+  .side-image-decoration {
+    left: -100px;
+  }
+  .signup-container {
+    left: 45px;
+  }
+}
+@media (max-width: 480px) {
+  .side-image-decoration {
+    right: -100px;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .image-ellipse {
+    top: -22px;
+    transform: scale(0.22);
+  }
+  .signup-side {
+    top: -125px;
+  }
+  .signup-container {
+    transform: scale(0.8);
+    left: 0;
+  }
+  .side-image-decoration {
+    visibility: hidden;
+    left: -100px;
+  }
+}
+@media (max-width: 300px) {
+  main {
+    width: fit-content;
+    height: fit-content;
+  }
+  .signup-page {
+    overflow: visible;
+  }
+  .impression-image-gradient-blue01 {
+    width: 104%;
+    height: 104%;
+  }
+
+  .image-ellipse {
+    bottom: -205px;
+    transform: scale(0.2);
+  }
+  .signup-side {
+    top: -27vh;
+  }
+  .signup-container {
+    transform: scale(0.7);
+  }
+}

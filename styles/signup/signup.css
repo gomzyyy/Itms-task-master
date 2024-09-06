@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 0.2s ease-in;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --col-blue: #0038ff;
+  --col-sky: #007aff;
+  --background-white: #fff;
+  --button-signup-ways: #333333;
+  --button-blue: #0038ff;
+}
+
+/* global-classes */
+
+.text-blue {
+  color: var(--col-blue);
+}
+
+.text-sky {
+  color: var(--col-sky);
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+main,
+.signup-page {
+  overflow-x: hidden;
+}
+main,
+.signup-page::-webkit-scrollbar {
+  display: none;
+}
+
+/* signup page desktop */
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+/* Impression image */
+
+.impression-image {
+  width: 44vw;
+  height: 80vh;
+  margin-top: 20vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.impression-image-gradient-blue01 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-ellipse {
+  height: 510px;
+  width: 510px;
+  position: absolute;
+  top: -140px;
+  left: -80px;
+  background: var(--background-white);
+  border-radius: 50%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-ellipse-signup {
+  height: 480px;
+  position: relative;
+}
+
+/* signup form side */
+
+.signup-side {
+  width: 56vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.signup-container {
+  width: 360px;
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  gap: 30px;
+  left: 100px;
+}
+.signup-label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.signup-logo {
+  width: 36px;
+  height: 35px;
+}
+.signup-company-name {
+  color: #000;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+.signup-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.greeting-msg {
+  color: var(--black-9001-a-1-a-1-a, #1a1a1a);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 140% */
+  margin-bottom: 24px;
+}
+.get-id,
+.get-password,
+.user-actions,
+.signup-options {
+  width: 100%;
+}
+.get-id-label,
+.get-password-label {
+  color: var(--black-800333333, #333);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 109.091% */
+  letter-spacing: 0.3px;
+  width: 100%;
+  padding: 0 16px;
+}
+.get-id,
+.get-password {
+  display: flex;
+  width: 360px;
+  padding: 12px 12px 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+
+.input-password {
+  margin-top: 16px;
+}
+.get-id input[type="text"],
+.get-password input[type="password"] {
+  outline: none;
+  border: none;
+  height: inherit;
+  width: inherit;
+  background-color: inherit;
+  color: #808080;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+}
+
+.user-actions {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.3px;
+}
+
+.toogle-remember {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 8px;
+}
+.toogle-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  position: relative;
+}
+.toogle-bg {
+  height: inherit;
+  width: inherit;
+}
+.toogle-icon {
+  position: absolute;
+  left: 0; /* 20px */
+  display: inline-block;
+}
+.remember-text {
+  color: #1a1a1a;
+  font-feature-settings: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit; /* 166.667% */
+  letter-spacing: inherit;
+}
+
+.signup-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.form-submit-btn {
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-blue);
+  border: none;
+  border-radius: 6px;
+  width: inherit;
+  margin-top: 32px;
+  cursor: pointer;
+  color: #fff;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: 0.3px;
+}
+.stretch-line {
+  width: 100%;
+  height: 0.5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+.signup-ways {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--button-signup-ways);
+  width: 100%;
+  gap: 8px;
+}
+.logo-signup-ways {
+  width: 20px;
+  height: 20px;
+}
+.signup-ways-text {
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.3px;
+}
+.redirect-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: 24px;
+  gap: 8px;
+}
+.register-text {
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.3px;
+  color: #1a1a1a;
+}
+.register-link {
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.3px;
+}
+.side-image-decoration {
+  width: fit-content;
+  position: absolute;
+  left: -20px;
+  top: -330px;
+}
+.side-image-decoration img {
+  transform: rotate(180deg);
+}

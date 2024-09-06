@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <!-- <script src="index.js"></script> -->
+    <script defer src="checkout.js"></script>
+</head>
+
+<body>
+    <header id="header-placeholder">
+        <div class="header">
+            <!-- for mobile view only -->
+            <div class="menu-icon-container">
+                <img src="./asset/images/header/menu_icon.svg" alt="menu icon" />
+            </div>
+
+            <!-- for mobile view only -->
+            <div class="mobile-icons-container">
+                <div>
+                    <!-- <p>Hi , Raj</p> -->
+                </div>
+                <div id="icons-container">
+                    <span>
+                        <img src="./asset/images/header/well_icon.svg" alt="notification icon" />
+                    </span>
+                    <span>
+                        <img src="./asset/images/header/cart_icon.svg" alt="cart icon" />
+                    </span>
+                </div>
+            </div>
+
+            <!-- for tablet and desktop  -->
+            <div class="logo-container">
+                <img src="./asset/images/logo.svg" alt="Logo" />
+                <h1><span>IT Maverick </span><span>Trainings</span></h1>
+            </div>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li id="close-menu">
+                        <img src="./asset/images/header/close_icon.svg" alt="close menu" />
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Materials</a></li>
+                    <li><a href="#Course-details-icon">Course</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li id="header-cart">
+                        <a href="#"></a><img src="./asset/images//header/cart_icon.svg" alt="cart icon">
+                    </li>
+                    <li id="header-profile-icon">
+                        <a href="#"></a><img src="./asset/images//header/profile_icon.svg" alt="profile_icon">
+                    </li>
+                    <!-- <li id="log-in-button"><button>Log-in</button></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="checkout">
+        <!-- for ellipce sape and butterfly -->
+        <div id="mobile-shape-container">
+            <div class="circle-shape circle-shape1">
+                <img src="./asset/images/index-page/butterfly_59.png" alt="butterfly">
+            </div>
+            <div class="circle-shape circle-shape2">
+                <img src="./asset/images/index-page/butterfly_59.png" alt="butterfly">
+            </div>
+        </div>
+
+        <!-- for pc and tablet  -->
+        <div id="back-to-button-container">
+            <button id="backto-button">
+                <span>
+                    <img src="./asset/images/checkout/back_icon.svg" alt="back button">
+                    <p>Back to Previous</p>
+                </span>
+            </button>
+            <h1 id="checkout-header">Checkout</h1>
+        </div>
+
+        <!-- back button  for mobile  -->
+        <div class="for-mobile-back-icon">
+            <button><img src="./asset/images/checkout/mobile-back_icon.svg" alt="back button"></button>
+        </div>
+
+        <!-- order details for mobile viewport  -->
+        <div id="order-details-mobile">
+            <div>
+                <div class="order-details-mobile-header">
+                    <h2>Order Details</h2>
+                    <p>&#8377;10,299</p>
+                </div>
+
+                <div id="order-details-flex">
+                    <img src="./asset/images/checkout/course_icon.svg" alt="course">
+                    <p>Next JS - The Next Big Thing : Your Complete Guide to Get Started Like a pro</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- for all devices  -->
+        <div id="billing-and-summary-container">
+
+            <div id="billing-container">
+                <!-- Billing address section start  -->
+                <section id="billing-address-section ">
+                    <h2>Billing address</h2>
+                    <div class="input-container">
+                        <div class="input-box-container">
+                            <p><label for="country-select">Country </label> <span>*</span> </p>
+                            <select id="country-select" name="country">
+                                <option value="" disabled selected>Select your country</option>
+                            </select>
+                        </div>
+                        <div class="input-box-container">
+                            <p><label for="state-select">State </label><span>*</span> </p>
+                            <select id="state-select" name="state">
+                                <option value="" disabled selected>Select your state</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p id="Billing-tax-alert">IT Mavericks is required by law collect application transaction taxes for
+                        purchases made is certain txs
+                    </p>
+                </section>
+                <!-- Billing address section ends  -->
+
+                <section id="payment-method-section">
+                    <h2>Payment method</h2>
+                    <span>
+                        Secured connection<img src="./asset/images/checkout/lock_icon.svg" alt="lock icon">
+                    </span>
+
+
+                    <!-- payment option radio button  -->
+                    <div class="payment-method-options">
+                        <div class="radio-group">
+                            <input class="custom-radio" type="radio" name="payment-method" id="upi">
+                            <label for="upi" class="radio-label">
+                                <img src="./asset/images/checkout/upi_logo.svg" alt="UPI" height="20">
+                                &nbsp; UPI
+                            </label>
+                        </div>
+                        <div class="radio-group ">
+                            <input class="custom-radio" type="radio" name="payment-method" id="credit-debit-card">
+                            <label for="credit-debit-card" class="radio-label">
+                                <img src="./asset/images/checkout/credit_card_icon.svg" alt="Credit/Debit Card"
+                                    height="18">
+                                &nbsp; Credit/Debit Card
+                            </label>
+                            <div class="payment-icons">
+                                <img src="./asset/images/checkout/visa_icon.svg" alt="Visa" class="payment-icon"
+                                    height="20">
+                                <img src="./asset/images/checkout/master_card_icon.svg" alt="MasterCard"
+                                    class="payment-icon" height="20">
+                                <img src="./asset/images/checkout/rupay_card_icon.svg" alt="RuPay" class="payment-icon"
+                                    height="20">
+                            </div>
+                        </div>
+                        <div class="radio-group">
+                            <input class="custom-radio" type="radio" name="payment-method" id="net-banking">
+                            <label for="net-banking" class="radio-label">
+                                <img src="./asset/images/checkout/netbanking_icon.svg" alt="Net Banking" height="20">
+                                &nbsp;&nbsp; Net Banking
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <input class="custom-radio" type="radio" name="payment-method" id="wallets">
+                            <label for="wallets" class="radio-label">
+                                <img src="./asset/images/checkout/wallets_icon.svg" alt="Wallets" height="20">
+                                &nbsp;&nbsp; Wallets
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div id="summary-container">
+                <h2>Summary</h2>
+
+                <div id="price" class="summery-flexbox">
+                    <p>Price</p>
+                    <p>&#8377; 10,299</p>
+                </div>
+                <div id="discount" class="summery-flexbox">
+                    <p>Discount</p>
+                    <p>0</p>
+                </div>
+
+                <hr style="margin-top: 40px;">
+
+                <div id="total" class="summery-flexbox">
+                    <p>Total:</p>
+                    <p>&#8377; 10,299</p>
+                </div>
+
+                <div class="haveacoupon-code">
+                    <input type="text" name="" id="" placeholder="Have a discount code?">
+                    <button class="blue-button">Apply</button>
+                </div>
+                <p>By completing your purchase you agree to these <a href="">Terms of Service</a>.</p>
+
+                <div id="checkout-btn-container">
+                    <button id="checkout-btn">Complete Checkout</button>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div id="order-details">
+            <div>
+                <h2>Order Details</h2>
+                <div id="order-details-flex">
+                    <img src="./asset/images/checkout/course_icon.svg" alt="course">
+                    <p>Next JS - The Next Big Thing : Your Complete Guide to Get Started Like a pro</p>
+                    <p>&#8377;10,299</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer-placeholder">
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/contactUs.css">
+</head>
+
+<body>
+    <div class="parent-container">
+        <header id="header-placeholder">
+            <div class="header">
+                <!-- for mobile view only -->
+                <div class="menu-icon-container">
+                    <img src="./asset/images/header/menu_icon.svg" alt="menu icon" />
+                </div>
+                <!-- for mobile view only -->
+                <div class="mobile-icons-container">
+                    <div>
+                        <p>Hi , Raj</p>
+                    </div>
+                    <div id="icons-container">
+                        <span>
+                            <img src="./asset/images/header/well_icon.svg" alt="notification icon" />
+                        </span>
+                        <span>
+                            <img src="./asset/images/header/cart_icon.svg" alt="cart icon" />
+                        </span>
+                    </div>
+                </div>
+
+                <!-- for tablet and desktop  -->
+                <div class="logo-container">
+                    <img src="./asset/images/logo.svg" alt="Logo" />
+                    <h1><span>IT Maverick </span><span>Trainings</span></h1>
+                </div>
+
+                <nav class="navigation-bar">
+                    <ul>
+                        <li id="close-menu">
+                            <img src="./asset/images/header/close_icon.svg" alt="close menu" />
+                        </li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Materials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#Course-details-icon">Course</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <!-- <li id="header-cart">
+                            <a href="#"></a><img src="./asset/images//header/cart_icon.svg" alt="cart icon">
+                        </li> -->
+                        <li id="log-in-button"><button>Log-in</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="shape-container">
+                <div id="heading-container">
+                    <h1>CONTACT WITH US</h1>
+                    <p>Let’s Be Friends</p>
+                </div>
+
+                <div class="circle-container">
+                    <div class="circle first-circle"></div>
+                    <div class="circle second-circle"></div>
+                </div>
+
+                <div class="butterfly-container">
+                    <div class="btr-img btr-img1">
+                        <img src="./asset/images/contactUs/butterfly.svg" alt="butterfly image">
+                    </div>
+                    <div class="btr-img btr-img2">
+                        <img src="./asset/images/contactUs/butterfly.svg" alt="butterfly image">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="form-container">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-col">
+                            <label for="full-name">Full Name<span>*</span></label>
+                            <input id="full-name" type="text">
+                        </div>
+                        <div class="form-col">
+                            <label for="email">Email<span>*</span></label>
+                            <input id="email" type="email">
+                        </div>
+                        <div class="form-col">
+                            <label for="phone-number">Phone Number<span>*</span></label>
+                            <input id="phone-number" type="number">
+                        </div>
+                        <div class="form-col">
+                            <label for="message">Message<span>*</span></label>
+                            <textarea rows="5" id="message"></textarea>
+                        </div>
+
+                        <button id="submit-btn" type="submit">Send Message</button>
+
+                    </form>
+                </div>
+                <div class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462332.33082934027!2d84.86552238464357!3d25.136659962061717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2f331d4ad0dc3%3A0x2d288b5d09c00dbe!2sRuins%20of%20Nalanda%20University!5e0!3m2!1sen!2sin!4v1724744055782!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <p>E-Mail ID:
+                        <a href="mailto:support@itmavericksolutions.in">support@itmavericksolutions.in</a>
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- newsletter for mobile devices only  -->
+            <div id="newsletter-container" style="display:none;">
+                <div>
+                    <p>Want to get special offers and Course updates?</p>
+                    <input type="text" placeholder="Your email address here">
+                    <button class="blue-button">Subscribe</button>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <!-- only for developmet  -->
+            <div style="min-height: 50vh;"></div>
+        </footer>
+    </div>
+
+
+    <script>
+        // for header open and close in mobile 
+        let openMenuButton = document.querySelector(".menu-icon-container");
+        openMenuButton.addEventListener('click', function () {
+            document.querySelector(".navigation-bar").classList.add("open");
+            console.log('hello')
+        });
+
+        let closeMenuButton = document.querySelector("#close-menu");
+        closeMenuButton.addEventListener('click', function () {
+            document.querySelector(".navigation-bar").classList.remove("open");
+        });
+
+        // -----------------------------------------------------------------------------
+    </script>
+</body>
+
+</html>

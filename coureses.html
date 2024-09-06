@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coureses</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/coureses.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="header">
+        <!-- for mobile view only -->
+        <div class="menu-icon-container">
+            <img src="./asset/images/header/menu_icon.svg" alt="menu icon" />
+        </div>
+
+        <!-- for mobile view only -->
+        <div class="mobile-icons-container">
+            <div>
+                <!-- <p>Hi , Raj</p> -->
+            </div>
+            <div id="icons-container">
+                <span>
+                    <img src="./asset/images/header/well_icon.svg" alt="notification icon" />
+                </span>
+                <span>
+                    <img src="./asset/images/header/cart_icon.svg" alt="cart icon" />
+                </span>
+            </div>
+        </div>
+
+        <!-- for tablet and desktop  -->
+        <div class="logo-container">
+            <img src="./asset/images/logo.svg" alt="Logo" />
+            <h1><span>IT Maverick </span><span>Trainings</span></h1>
+        </div>
+
+        <nav class="navigation-bar">
+            <ul>
+                <li id="close-menu">
+                    <img src="./asset/images/header/close_icon.svg" alt="close menu" />
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Materials</a></li>
+                <li><a href="#Course-details-icon">Course</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="header-cart">
+                    <a href="#"></a><img src="./asset/images//header/cart_icon.svg" alt="cart icon">
+                </li>
+                <li id="header-profile-icon">
+                    <a href="#"></a><img src="./asset/images//header/profile_icon.svg" alt="profile_icon">
+                </li>
+                <!-- <li id="log-in-button"><button>Log-in</button></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- heading in mobile devices after scroll  -->
+    <div class="heading-in-mobile">
+        <h1>COURSES</h1>
+        <button>
+            <img src="./asset/images/coureses/filter_icon.svg" alt="filter icon">
+        </button>
+    </div>
+
+    <div class="parent-container">
+        <!-- shape container -->
+        <div class="shape-container">
+            <h1>COURSES</h1>
+            <div id="first-circle">
+            </div>
+            <div id="second-circle">
+            </div>
+            <div class="shape-img-container">
+                <img id="img-one" src="./asset/images/blog/butterfly_one.svg" alt="butterfly">
+                <img id="img-two" src="./asset/images/blog/butterfly_one.svg" alt="butterfly">
+            </div>
+
+        </div>
+
+        <!-- main content  -->
+        <div class="content-parent">
+            <!-- hide it in mobile and tablet devices -->
+            <div class="rectangle-shape"></div>
+
+
+
+            <div class="content">
+                <div class="aside-mobile-background ">
+
+                    <aside>
+
+                        <!-- back button in mobile  -->
+                        <button id="back-button">
+                            <img src="./asset/images/coureses/arrow_iocn.svg" alt="arrow icon">
+                        </button>
+
+                        <!-- search section -->
+                        <section id="search-section">
+                            <div id="search-container">
+                                <img src="./asset/images/coureses/search_icon.svg" alt="search icon" />
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </section>
+
+                        <!-- categories section  -->
+                        <section id="categories-section">
+                            <div class="heading-container">
+                                <h3>Categories</h3>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="backend-development" value="backend-development">
+                                    <label for="backend-development">Backend Development</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="design" value="design"> <label
+                                        for="design">Design</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="business" value="business">
+                                    <label for="business">Business</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="development" value="development">
+                                    <label for="development">Development</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="featured" value="featured">
+                                    <label for="featured">Featured</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="frontend-development" value="frontend-development">
+                                    <label for="frontend-development">Frontend Development</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="health-fitness" value="health-fitness">
+                                    <label for="health-fitness">Health & Fitness</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="full-stack-development" value="full-stack-development">
+                                    <label for="full-stack-development">Full Stack Development</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="web-development" value="web-development">
+                                    <label for="web-development">Web Development</label>
+                                </li>
+                            </ul>
+
+                        </section>
+
+                        <!-- level section  -->
+                        <section id="level-section">
+                            <div class="heading-container">
+                                <h3>Level</h3>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="all-lavels" value="all-lavels">
+                                    <label for="all-lavels">All Levels </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="beginner" value="beginner"> <label
+                                        for="beginner">Beginner</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="intermediate" value="intermediate">
+                                    <label for="intermediate">Intermediate</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="expert" value="expert">
+                                    <label for="expert">Expert</label>
+                                </li>
+                            </ul>
+
+                        </section>
+
+                        <!-- Price section  -->
+                        <section id="price-section">
+                            <div class="heading-container">
+                                <h3>Price</h3>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="free" value="free">
+                                    <label for="free">Free </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="paid" value="paid">
+                                    <label for="paid">Paid</label>
+                                </li>
+                            </ul>
+
+                        </section>
+
+                        <!-- clear all filters button  container -->
+                        <div id="clear-all-filters">
+                            <button>Clear All Filters</button>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+                <main>
+                    <!-- filter button for mobile devices  -->
+                    <div class="filter-button-container">
+                        <button>
+                            <img src="./asset/images/coureses/filter_icon.svg" alt="filter icon">
+                            Filter
+                        </button>
+                    </div>
+
+                    <section id="courses-section">
+                        <div class="courses-card-container">
+
+                            <div class="course-card">
+                                <div class="course-card-head">
+                                    <img src="./asset/images/index-page/course-enroll.png" alt="course cover image" />
+                                </div>
+                                <div class="course-card-body">
+                                    <div class="review-container">
+                                        <span>
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/blank_star_icon.svg"
+                                                alt="star icon" />
+                                        </span>
+                                        <span id="review-marks">4.67 (3)</span>
+                                    </div>
+                                    <p>Next JS – The NEXT Big Thing</p>
+                                    <div class="course-duration-contanier">
+                                        <div id="enroll-student">
+                                            <img src="./asset/images/coureses/user_icon.svg" alt="user icon">
+                                            <span>2</span>
+                                        </div>
+                                        <div id="course-duration">
+                                            <img src="./asset/images/coureses/watch_icon.svg" alt="watch icon">
+                                            <span>01 hr 20 min</span>
+                                        </div>
+                                    </div>
+                                    <p id="course-author">By <span>ajeetkumar5487</span> In</p>
+                                    <p id="course-description"> Backend Development, Frontend Development, Full Stack
+                                        Development, Web Development
+                                    </p>
+
+                                </div>
+                                <div class="button-container">
+                                    <button>Enroll Now</button>
+                                </div>
+
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-card-head">
+                                    <img src="./asset/images/index-page/course-enroll.png" alt="course cover image" />
+                                </div>
+                                <div class="course-card-body">
+                                    <div class="review-container">
+                                        <span>
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/blank_star_icon.svg"
+                                                alt="star icon" />
+                                        </span>
+                                        <span id="review-marks">4.67 (3)</span>
+                                    </div>
+                                    <p>Next JS – The NEXT Big Thing</p>
+                                    <div class="course-duration-contanier">
+                                        <div id="enroll-student">
+                                            <img src="./asset/images/coureses/user_icon.svg" alt="user icon">
+                                            <span>2</span>
+                                        </div>
+                                        <div id="course-duration">
+                                            <img src="./asset/images/coureses/watch_icon.svg" alt="watch icon">
+                                            <span>01 hr 20 min</span>
+                                        </div>
+                                    </div>
+                                    <p id="course-author">By <span>ajeetkumar5487</span> In</p>
+                                    <p id="course-description"> Backend Development, Frontend Development, Full Stack
+                                        Development, Web Development
+                                    </p>
+
+                                </div>
+                                <div class="button-container">
+                                    <button>Enroll Now</button>
+                                </div>
+
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-card-head">
+                                    <img src="./asset/images/index-page/course-enroll.png" alt="course cover image" />
+                                </div>
+                                <div class="course-card-body">
+                                    <div class="review-container">
+                                        <span>
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/blank_star_icon.svg"
+                                                alt="star icon" />
+                                        </span>
+                                        <span id="review-marks">4.67 (3)</span>
+                                    </div>
+                                    <p>Next JS – The NEXT Big Thing</p>
+                                    <div class="course-duration-contanier">
+                                        <div id="enroll-student">
+                                            <img src="./asset/images/coureses/user_icon.svg" alt="user icon">
+                                            <span>2</span>
+                                        </div>
+                                        <div id="course-duration">
+                                            <img src="./asset/images/coureses/watch_icon.svg" alt="watch icon">
+                                            <span>01 hr 20 min</span>
+                                        </div>
+                                    </div>
+                                    <p id="course-author">By <span>ajeetkumar5487</span> In</p>
+                                    <p id="course-description"> Backend Development, Frontend Development, Full Stack
+                                        Development, Web Development
+                                    </p>
+
+                                </div>
+                                <div class="button-container">
+                                    <button>Enroll Now</button>
+                                </div>
+
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-card-head">
+                                    <img src="./asset/images/index-page/course-enroll.png" alt="course cover image" />
+                                </div>
+                                <div class="course-card-body">
+                                    <div class="review-container">
+                                        <span>
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/blank_star_icon.svg"
+                                                alt="star icon" />
+                                        </span>
+                                        <span id="review-marks">4.67 (3)</span>
+                                    </div>
+                                    <p>Next JS – The NEXT Big Thing</p>
+                                    <div class="course-duration-contanier">
+                                        <div id="enroll-student">
+                                            <img src="./asset/images/coureses/user_icon.svg" alt="user icon">
+                                            <span>2</span>
+                                        </div>
+                                        <div id="course-duration">
+                                            <img src="./asset/images/coureses/watch_icon.svg" alt="watch icon">
+                                            <span>01 hr 20 min</span>
+                                        </div>
+                                    </div>
+                                    <p id="course-author">By <span>ajeetkumar5487</span> In</p>
+                                    <p id="course-description"> Backend Development, Frontend Development, Full Stack
+                                        Development, Web Development
+                                    </p>
+
+                                </div>
+                                <div class="button-container">
+                                    <button>Enroll Now</button>
+                                </div>
+
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-card-head">
+                                    <img src="./asset/images/index-page/course-enroll.png" alt="course cover image" />
+                                </div>
+                                <div class="course-card-body">
+                                    <div class="review-container">
+                                        <span>
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/blank_star_icon.svg"
+                                                alt="star icon" />
+                                        </span>
+                                        <span id="review-marks">4.67 (3)</span>
+                                    </div>
+                                    <p>Next JS – The NEXT Big Thing</p>
+                                    <div class="course-duration-contanier">
+                                        <div id="enroll-student">
+                                            <img src="./asset/images/coureses/user_icon.svg" alt="user icon">
+                                            <span>2</span>
+                                        </div>
+                                        <div id="course-duration">
+                                            <img src="./asset/images/coureses/watch_icon.svg" alt="watch icon">
+                                            <span>01 hr 20 min</span>
+                                        </div>
+                                    </div>
+                                    <p id="course-author">By <span>ajeetkumar5487</span> In</p>
+                                    <p id="course-description"> Backend Development, Frontend Development, Full Stack
+                                        Development, Web Development
+                                    </p>
+
+                                </div>
+                                <div class="button-container">
+                                    <button>Enroll Now</button>
+                                </div>
+
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-card-head">
+                                    <img src="./asset/images/index-page/course-enroll.png" alt="course cover image" />
+                                </div>
+                                <div class="course-card-body">
+                                    <div class="review-container">
+                                        <span>
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/star_icon.svg"
+                                                alt="star icon" />
+                                            <img class="star_icon" src="./asset/images/index-page/blank_star_icon.svg"
+                                                alt="star icon" />
+                                        </span>
+                                        <span id="review-marks">4.67 (3)</span>
+                                    </div>
+                                    <p>Next JS – The NEXT Big Thing</p>
+                                    <div class="course-duration-contanier">
+                                        <div id="enroll-student">
+                                            <img src="./asset/images/coureses/user_icon.svg" alt="user icon">
+                                            <span>2</span>
+                                        </div>
+                                        <div id="course-duration">
+                                            <img src="./asset/images/coureses/watch_icon.svg" alt="watch icon">
+                                            <span>01 hr 20 min</span>
+                                        </div>
+                                    </div>
+                                    <p id="course-author">By <span>ajeetkumar5487</span> In</p>
+                                    <p id="course-description"> Backend Development, Frontend Development, Full Stack
+                                        Development, Web Development
+                                    </p>
+
+                                </div>
+                                <div class="button-container">
+                                    <button>Enroll Now</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+
+                    <!-- pagination   -->
+                    <section>
+                        <div class="pagination-container">
+                            <div class="pagination">
+                                <button class="img-button">
+                                    <img src="./asset/images/blog/previous_icon.svg" alt="previous_icon">
+                                </button>
+                                <button class="active">1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button class="img-button">
+                                    <img src="./asset/images/blog/next_icon.svg" alt="next_icon">
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+
+        </div>
+
+        <div id="newsletter-container">
+            <div>
+                <p>Want to get special offers and Course updates?</p>
+                <input type="text" placeholder="Your email address here">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer id="footer-placeholder">
+        <!-- Footer content goes here -->
+    </footer>
+
+    <script>
+        // for load footer dynamically 
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    if (document.getElementById('footer-placeholder')) {
+                        document.getElementById('footer-placeholder').innerHTML = data;
+                    }
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+        // -----------------------------------------------------------------------------
+
+
+        // for header open and colse in mobile devices 
+        let openMenuButton = document.querySelector(".menu-icon-container");
+        openMenuButton.addEventListener('click', function () {
+            document.querySelector(".navigation-bar").classList.add("open");
+            console.log('hello')
+        });
+
+        let closeMenuButton = document.querySelector("#close-menu");
+        closeMenuButton.addEventListener('click', function () {
+            document.querySelector(".navigation-bar").classList.remove("open");
+        });
+        // -----------------------------------------------------------------------------
+        // for hide and show searchbar in mobile devices 
+        function toggleSearch() {
+            const filterButton = document.querySelector('.filter-button-container button');
+            const filterIcon = document.querySelector(".heading-in-mobile button");
+            console.log(filterIcon);
+            const searchContainer = document.querySelector(".aside-mobile-background");
+            const backButton = document.querySelector("#back-button");
+            const asideElement = document.querySelector(".aside-mobile-background aside");
+
+            // Function to toggle the visibility of the search container and filter button
+            function toggleSearchContainer(show) {
+                searchContainer.classList.toggle("show", show);
+                filterButton.style.transform = show ? 'translateX(150%)' : 'translateX(0)';
+                if (!show) {
+                    searchContainer.classList.remove("fixed-aside-mobile-background");
+                }
+            }
+
+            // Show the search container and add class when filter icon is clicked
+            filterIcon.addEventListener('click', () => {
+                searchContainer.classList.toggle("fixed-aside-mobile-background");
+                if (!searchContainer.classList.contains("fixed-aside-mobile-background")) {
+                    searchContainer.classList.add("transition-active");
+                    setTimeout(() => {
+                        searchContainer.classList.remove("transition-active");
+                    }, 500);
+                }
+            });
+
+            // Show the search container when filter button is clicked
+            filterButton.addEventListener('click', () => toggleSearchContainer(true));
+
+            // Hide the search container when back button or outside click is detected
+            backButton.addEventListener('click', () => toggleSearchContainer(false));
+            searchContainer.addEventListener('click', () => toggleSearchContainer(false));
+
+            // Prevent clicks inside the aside from closing the search container
+            asideElement.addEventListener('click', (event) => event.stopPropagation());
+        }
+
+
+
+        // Call the function after the DOM has fully loaded
+        document.addEventListener('DOMContentLoaded', toggleSearch);
+        // ----------------------------------------------------------------------------------
+
+        // for show or hide header in mobile devices 
+        function handleScroll() {
+            const filterButton = document.querySelector('.filter-button-container button');
+            const filterButtonRect = filterButton.getBoundingClientRect();
+            const distanceFromTop = filterButtonRect.top;
+            const searchContainer = document.querySelector(".aside-mobile-background");
+            // console.log('distance from top:', distanceFromTop);
+
+            const mobileHeader = document.querySelector(".heading-in-mobile");
+            const shapeContainer = document.querySelector(".shape-container");
+            if (distanceFromTop < 20) {
+                mobileHeader.classList.add("display-mobile-heading");
+            } else if (distanceFromTop >= 79) {
+                mobileHeader.classList.remove("display-mobile-heading");
+                if (searchContainer.classList.contains("fixed-aside-mobile-background")) {
+                    searchContainer.classList.add("transition-active"); // Add a temporary class for transition
+                    searchContainer.classList.remove("fixed-aside-mobile-background");
+                    setTimeout(() => {
+                        searchContainer.classList.remove("transition-active");
+                    }, 500); // Match the duration of the transition
+                }
+            }
+        }
+
+        if (window.matchMedia("(max-width: 540px)").matches) {
+            window.addEventListener('scroll', handleScroll);
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+@media (max-width: 1200px) {
+  .login-page {
+    flex-direction: column;
+    overflow: auto;
+  }
+  .impression-image {
+    width: 103vw;
+    height: 40%;
+    min-height: 290px;
+  }
+  .login-side {
+    width: 100vw;
+    min-height: 595px;
+    overflow: visible;
+    top: 100px;
+  }
+  .login-container {
+    right: unset;
+    transform: scale(1.1);
+    margin-top: 5vh;
+  }
+
+  .image-ellipse {
+    position: absolute;
+    transform: scale(0.7);
+    bottom: -155px;
+    right: unset;
+  }
+  .image-ellipse-login {
+    right: unset;
+  }
+  .side-image-decoration {
+    right: -20px;
+    bottom: -200px;
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    width: fit-content;
+    height: fit-content;
+  }
+  .login-page {
+    height: fit-content;
+    width: 100vw;
+    overflow: auto;
+  }
+
+  .impression-image {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    overflow: hidden;
+    top: -155px;
+    height: 390px;
+    width: 100.5vw;
+  }
+  .image-ellipse {
+    bottom: -178px;
+    right: unset;
+    transform: scale(0.3);
+  }
+  .login-side {
+    height: 576px;
+    margin-top: 0;
+    align-items: unset;
+    width: 100vw;
+    top: -110px;
+    overflow-y: visible;
+  }
+  .login-container {
+    right: unset;
+    transform: scale(0.9);
+    margin-top: 0;
+    top: 0;
+    right: 0;
+    overflow: visible;
+  }
+  .side-image-decoration {
+    display: visible;
+    right: -50px;
+  }
+}
+@media (max-width: 580px) {
+  .side-image-decoration {
+    display: visible;
+    right: -100px;
+  }
+}
+@media (max-width: 480px) {
+  .side-image-decoration {
+    display: visible;
+    right: -100px;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .image-ellipse {
+    bottom: -198px;
+    transform: scale(0.22);
+  }
+  .login-side {
+    top: -90px;
+    /* top: -15vh; */
+  }
+  .login-container {
+    transform: scale(0.8);
+  }
+  .side-image-decoration {
+    visibility: hidden;
+    right: -100px;
+  }
+}
+@media (max-width: 300px) {
+  main {
+    width: fit-content;
+    height: fit-content;
+  }
+  .login-page {
+    overflow: visible;
+  }
+  .impression-image-gradient-blue01 {
+    width: 104%;
+    height: 104%;
+  }
+
+  .image-ellipse {
+    bottom: -205px;
+    transform: scale(0.2);
+  }
+  .login-side {
+    top: -27vh;
+  }
+  .login-container {
+    transform: scale(0.7);
+  }
+}

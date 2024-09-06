@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login/login.css" />
+    <link rel="stylesheet" href="./styles/login/login-responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="login-page">
+        <!-- login impression image -->
+
+        <div class="impression-image">
+          <img
+            src="./src/login/login-gradient-1.png"
+            class="impression-image-gradient-blue01"
+          />
+          <div class="image-ellipse">
+            <img
+              src="./src/login/Mobile login-rafiki-1.png"
+              class="image-ellipse-login"
+            />
+          </div>
+        </div>
+
+        <!-- login side -->
+
+        <div class="login-side">
+          <div class="login-container">
+            <!--title and LOGO -->
+
+            <div class="login-label">
+              <div class="logo">
+                <img src="./src/LOGO.svg" class="login-logo" />
+              </div>
+              <div class="login-company-name">
+                <div class="company-name">
+                  IT Maverick<span class="text-blue"> Trainings</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- login form -->
+
+            <form action="#" class="login-form">
+              <h2 class="greeting-msg">Nice to see you again</h2>
+
+              <div class="input-id">
+                <label for="get_id" class="get-id-label">Username</label>
+                <div class="get-id" id="get_id">
+                  <input type="text" placeholder="Email or phone number" />
+                </div>
+              </div>
+
+              <div class="input-password">
+                <label for="get_password" class="get-password-label"
+                  >Passsword</label
+                >
+                <div class="get-password" id="get_password">
+                  <input type="password" placeholder="Enter password" />
+                </div>
+              </div>
+              <div class="user-actions">
+                <div class="toogle-remember">
+                  <span class="toogle-btn">
+                    <img src="./src/login/BG-Switcher.svg" class="toogle-bg" />
+                    <span class="toogle-icon">
+                      <img src="./src/login/toogle-remember.svg" />
+                    </span>
+                  </span>
+                  <span class="remember-text">Remember me</span>
+                </div>
+                <a href=""><div class="key-recovery text-sky">Forgot password?</div></a>
+              </div>
+              <div class="login-options">
+                <button class="form-submit-btn" type="submit">Login</button>
+
+                <span class="stretch-line"></span>
+
+                <div class="login-ways">
+                  <img
+                    src="./src/LOGO-Google.svg"
+                    class="logo-login-ways"
+                  />
+                  <span class="login-ways-text"> Or sign in with Google </span>
+                </div>
+              </div>
+              <div class="redirect-register">
+                <span class="register-text">Don't have an account?</span>
+                <a href="./signup.html"
+                  ><span class="register-link text-sky">Register</span></a
+                >
+              </div>
+            </form>
+          </div>
+          <div class="side-image-decoration">
+            <img src="./src/login/login-gradient-2.png">
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
